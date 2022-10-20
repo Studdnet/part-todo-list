@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,33 @@
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	
-<div class="container">
-	<div class="input-field">
-		<textarea placeholder="Enter your new todo"></textarea>
-		<i class="uil uil-notes note-icon"></i>
+
+	<div class="container">
+		<div class="input-field">
+			<textarea placeholder="Enter your new todo"></textarea>
+			<i class="uil uil-notes note-icon"></i>
+		</div>
+		<ul class="todoList">
+			<li class="list">
+				<input type="checkbox">
+				<span class="task">Buy gym membership</span>
+				<i class="uil uil-trash"></i>
+			</li>
+			<li class="list">
+				<input type="checkbox">
+				<span class="task">I need the first part JavaScript course</span>
+				<i class="uil uil-trash"></i>
+			</li>
+		</ul>
+		<div class="pending-tasks">
+			<span>You have <span>no </span>tasks pending.</span>
+			<button class="clear-button">Clear All</button>
+		</div>
 	</div>
-</div>
 
 	<script src="script.js"></script>
 </body>
+
 </html>
