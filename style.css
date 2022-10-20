@@ -63,7 +63,10 @@ textarea::-webkit-scrollbar {
 }
 
 .container .todoList {
-	margin-top: 20px;
+	margin-top: 0px;
+	max-height: 380px;
+	overflow-y: auto;
+	padding-right: 20px;
 }
 
 .todoList .list{
@@ -82,7 +85,7 @@ textarea::-webkit-scrollbar {
 	height: 16px;
 	min-width: 16px;
 	accent-color: #4070f4;
-	/* pointer-events: none; */
+	pointer-events: none;
 }
 
 .todoList .list .task {
@@ -136,6 +139,7 @@ textarea::-webkit-scrollbar {
 	border-radius: 4px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
+	pointer-events: none;
 }
 
 .clear-button:hover {
