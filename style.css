@@ -140,8 +140,15 @@ textarea::-webkit-scrollbar {
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
 	pointer-events: none;
+	white-space: nowrap;
 }
 
 .clear-button:hover {
 background-color: #0e4bf1;
+}
+
+@media screen and (max-with: 350px) {
+	.container {
+		padding: 25px 10px;
+	}
 }
